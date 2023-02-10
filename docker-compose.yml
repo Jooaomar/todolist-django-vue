@@ -1,0 +1,10 @@
+version: '3'
+services:
+  django:
+    build: ./django-rest
+    ports:
+      - "8000:8000"
+  vue:
+    build: ./vue
+    ports:
+      - "8080:8080"
